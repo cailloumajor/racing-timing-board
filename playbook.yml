@@ -1,0 +1,13 @@
+---
+- hosts: all
+  roles:
+    - role: naftulikay.python-dev
+      become: true
+      python_user: vagrant
+      python_version: "3.5.3"
+  tasks:
+    - name: Set authorized key for Visual Studio Code remote SSH
+      authorized_key:
+        user: vagrant
+        state: present
+        key: "{{ lookup('file', '/tmp/id_rsa_vscode_remote.pub') }}"

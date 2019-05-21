@@ -12,3 +12,6 @@ indent_style = tab
 
 [*.{yml,yaml}]
 indent_size = 2
+
+[Vagrantfile]
+indent_size = 2

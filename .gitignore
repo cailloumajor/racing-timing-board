@@ -1,6 +1,9 @@
 
-# Created by https://www.gitignore.io/api/c++,linux,python,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=c++,linux,python,visualstudiocode
+# Created by https://www.gitignore.io/api/c++,linux,python,ansible,vagrant,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=c++,linux,python,ansible,vagrant,visualstudiocode
+
+### Ansible ###
+*.retry
 
 ### C++ ###
 # Prerequisites
@@ -175,6 +178,16 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+### Vagrant ###
+# General
+.vagrant/
+
+# Log files (if you are creating logs in debug mode, uncomment this)
+# *.logs
+
+### Vagrant Patch ###
+*.box
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -186,12 +199,4 @@ dmypy.json
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/c++,linux,python,visualstudiocode
-
-### Visual Studio Code C/C++ extension
-!.vscode/c_cpp_properties.json
-
-### C/C++ objects and binaries ###
-build/
-bin/*
-!bin/.gitkeep
+# End of https://www.gitignore.io/api/c++,linux,python,ansible,vagrant,visualstudiocode
